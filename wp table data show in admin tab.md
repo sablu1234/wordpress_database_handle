@@ -1,4 +1,8 @@
 function add_report_page() {
+
+global $wpdb;
+$table_name = $wpdb->prefix . 'reports';
+
   // Table data show
     $results = $wpdb->get_results("SELECT * FROM $table_name", ARRAY_A);
     if($results) {
