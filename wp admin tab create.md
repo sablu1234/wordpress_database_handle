@@ -1,3 +1,4 @@
+add_action('admin_menu', 'my_reports_admin_menu');
 function my_reports_admin_menu() {
     add_menu_page(
         'Reports',          // Page title
